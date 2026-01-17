@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Biblioteca Sociedade Humanitária</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="contact-page-body">
+
+    <header class="navbar">
+        <div class="logo">BSH <span>1879</span></div>
+        <nav class="nav-links">
+    <a href="index.html">Início</a>
+    <a href="trabalhos.html">Trabalhos e Visitantes</a>
+    <a href="contato.html" class="active">Fale Conosco</a> </nav>
+    </header>
+
+    <main class="page-container">
+        <section class="contact-hero dark-mode">
+            <div class="container-small">
+                <span class="tagline-gold">Atendimento</span>
+                <h1 class="title-gold">Fale Conosco</h1>
+                <div class="divider-gold"></div>
+                <p class="text-light">Tem alguma dúvida? Envie sua mensagem para que possamos lhe ajudar!.</p>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <div class="container-form-luxury">
+                <form id="google-form" action="https://script.google.com/macros/s/AKfycbznrqGifG4AppQCvYRCEaOr2yZdJ2omaGPq-8lCti_6dg41vAJWcnMTowQOcYtJDXvk/exec" method="POST">
+    <div class="input-group">
+        <label class="label-gold">Nome Completo *</label>
+        <div class="input-field-dark">
+            <i class="fa fa-user icon-gold"></i>
+            <input type="text" id="nome-contato" name="Nome" placeholder="Ex: José Bonifácio" required>
+        </div>
+        <small id="nome-erro" class="error-msg-gold"></small>
+    </div>
+
+    <div class="input-group">
+        <label class="label-gold">Telefone *</label>
+        <div class="input-field-dark">
+            <i class="fa fa-phone icon-gold"></i>
+            <input type="tel" id="tel-contato" name="Telefone" placeholder="(13) 99999-9999" maxlength="15" required>
+        </div>
+    </div>
+
+    <div class="input-group">
+        <label class="label-gold">E-mail *</label>
+        <div class="input-field-dark">
+            <i class="fa fa-envelope icon-gold"></i>
+            <input type="email" id="email-contato" name="Email" placeholder="seu@email.com" required>
+        </div>
+    </div>
+
+    <div class="input-group">
+        <label class="label-gold">Sua Mensagem *</label>
+        <div class="input-field-dark">
+            <textarea name="Mensagem" rows="4" placeholder="Como podemos ajudar?" required></textarea>
+        </div>
+    </div>
+
+    <div class="privacy-check-light">
+        <input type="checkbox" id="check" required>
+        <label for="check">
+            Li e aceito os 
+            <a href="termos-uso.html" target="_blank" class="text-inline-button">Termos de uso</a> 
+            e a 
+            <a href="politica-privacidade.html" target="_blank" class="text-inline-button">Política de Privacidade</a>.
+        </label>
+    </div>
+
+    <div class="btn-container">
+        <button type="submit" id="submit-btn" class="btn-submit-gold">
+            <span>Enviar Mensagem</span>
+            <i class="fa fa-paper-plane"></i>
+        </button>
+    </div>
+</form>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
