@@ -658,3 +658,71 @@ body { background: var(--branco); color: #333; overflow-x: hidden; }
     object-fit: cover; /* Isso faz a imagem cobrir a tela como um papel de parede */
     display: block;
 }
+
+/* --- AJUSTES DA SEÇÃO VISITE-NOS (SEM MAPA) --- */
+
+.container-luxury-centered {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 60px 40px;
+    border: 1px solid rgba(197, 160, 89, 0.2); /* Borda dourada sutil */
+    box-shadow: 0 15px 40px rgba(0,0,0,0.05);
+    border-radius: 8px;
+}
+
+/* Organiza os 3 itens (Endereço, Hora, Tel) lado a lado */
+.info-grid-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin: 50px 0;
+    text-align: center;
+}
+
+.info-item-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon-gold-large {
+    color: var(--dourado);
+    font-size: 2.5rem; /* Ícones maiores para destaque */
+    margin-bottom: 10px;
+}
+
+.info-item-center h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--verde-escuro);
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.info-item-center p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Botão maior e mais chamativo */
+.btn-large {
+    padding: 18px 50px;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+/* Responsividade para Celular */
+@media (max-width: 768px) {
+    .info-grid-row {
+        grid-template-columns: 1fr; /* Um em cima do outro no celular */
+        gap: 50px;
+    }
+    
+    .container-luxury-centered {
+        padding: 40px 20px;
+    }
+}
