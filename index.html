@@ -3,105 +3,259 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biblioteca Sociedade Humanitária</title>
+    <title>Biblioteca · Sociedade Humanitária de Santos</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Cinzel:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <header class="navbar">
-        <div class="logo">BSH <span>1879</span></div>
+    <!-- NAVBAR -->
+    <header class="navbar" id="navbar">
+        <div class="logo">
+            <span class="logo-bsh">BSH</span>
+            <span class="logo-year">EST. 1879</span>
+        </div>
         <nav class="nav-links">
-    <a href="index.html" class="active">Início</a>
-    <a href="trabalhos.html">Trabalhos e Visitantes</a>
-    <a href="contato.html">Fale Conosco</a>
-</nav>
+            <a href="index.html" class="active">Início</a>
+            <a href="trabalhos.html">Trabalhos e Visitantes</a>
+            <a href="contato.html">Fale Conosco</a>
+        </nav>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
     </header>
 
     <main>
-        <section id="home" class="hero-section">
+
+        <!-- HERO -->
+        <section class="hero-section">
             <div class="hero-container">
-                <img src="banner-principal.jpg" alt="Biblioteca" class="hero-img">
+                <img src="banner-principal.jpg" alt="Sede da Sociedade Humanitária de Santos" class="hero-img">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <p class="hero-eyebrow reveal-up">Santos · Desde 1879</p>
+                    <h1 class="hero-title reveal-up delay-1">Sociedade<br><em>Humanitária</em></h1>
+                    <div class="hero-ornament reveal-up delay-2">
+                        <span></span><i class="fa fa-star"></i><span></span>
+                    </div>
+                    <p class="hero-subtitle reveal-up delay-3">Guardiã da memória literária da Baixada Santista</p>
+                    <a href="#historia" class="hero-cta reveal-up delay-4">
+                        Conheça nossa história <i class="fa fa-arrow-down"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="scroll-hint">
+                <span></span>
             </div>
         </section>
 
+        <!-- RESUMO -->
         <section class="summary-section">
             <div class="container-small">
-                <h2>Um Portal entre o Passado e o Futuro</h2>
-                <p>Mergulhe na jornada da Sociedade Humanitária de Santos. De tesouros literários preservados desde o século XIX ao renascimento dos nossos tradicionais bailes sociais, este espaço foi desenhado para conectar você à história viva da Baixada Santista.</p>
+                <div class="ornament-line reveal-fade">
+                    <span></span><span class="dot"></span><span></span>
+                </div>
+                <h2 class="reveal-up">Um Portal entre o Passado e o Futuro</h2>
+                <p class="reveal-up delay-1">Mergulhe na jornada da Sociedade Humanitária de Santos. De tesouros literários preservados desde o século XIX ao renascimento dos nossos tradicionais bailes sociais, este espaço foi desenhado para conectar você à história viva da Baixada Santista.</p>
+                <div class="ornament-line ornament-flip reveal-fade">
+                    <span></span><span class="dot"></span><span></span>
+                </div>
             </div>
         </section>
 
+        <!-- HISTÓRIA -->
         <section id="historia" class="history-section">
+            <div class="history-bg-pattern"></div>
             <div class="container-history">
-                <h1 class="main-title">A Sociedade Humanitária de Santos: <br>Tradição e Renascimento</h1>
-                <div class="divider"></div>
-                
-                <div class="text-content">
-                    <p>Fundada em 1879, a Sociedade Humanitária dos Empregados no Comércio de Santos é uma das instituições mais tradicionais da Baixada Santista. Sua sede própria, um imponente edifício de arquitetura clássica na Praça José Bonifácio, é um marco histórico que abrigou, inclusive, o gabinete médico do ilustre poeta e médico Martins Fontes, que ali prestava seus serviços humanitários.</p>
-                    
-                    <p>O coração cultural da instituição é a sua Biblioteca, cuja organização e prestígio devem-se ao trabalho abnegado do seu Diretor Cultural, o Sr. Antônio Carlos Desidério de Oliveira. Sob sua gestão técnica, o acervo foi preservado como um tesouro literário da cidade. Atualmente, sob a liderança do Presidente, o Dr. Manoel Guino, a Sociedade vive um novo período de esplendor e modernização administrativa.</p>
-                    
-                    <p>Um dos maiores marcos desta gestão foi a revitalização das atividades sociais. Após permanecerem inativos por muitas décadas, os tradicionais Bailes da Humanitária foram reativados há três anos. O que começou como um resgate histórico tornou-se um fenômeno de público: hoje, a instituição realiza de dois a três bailes mensais, todos com absoluto sucesso de lotação, devolvendo ao centro de Santos a alegria e o convívio social que sempre foram marcas registradas desta Casa.</p>
+
+                <div class="history-header reveal-up">
+                    <p class="section-eyebrow">Nossa Trajetória</p>
+                    <h2 class="section-title">A Sociedade Humanitária de Santos:<br><em>Tradição e Renascimento</em></h2>
+                    <div class="divider-ornament">
+                        <span></span><i class="fa fa-feather-alt"></i><span></span>
+                    </div>
+                </div>
+
+                <div class="history-grid">
+                    <div class="history-card reveal-left">
+                        <div class="history-card-icon">
+                            <i class="fa fa-landmark"></i>
+                        </div>
+                        <div class="history-card-body">
+                            <h3>A Sede</h3>
+                            <p>Fundada em 1879, a Sociedade Humanitária dos Empregados no Comércio de Santos é uma das instituições mais tradicionais da Baixada Santista. Sua sede própria, um imponente edifício de arquitetura clássica na Praça José Bonifácio, é um marco histórico que abrigou, inclusive, o gabinete médico do ilustre poeta e médico Martins Fontes, que ali prestava seus serviços humanitários.</p>
+                        </div>
+                    </div>
+
+                    <div class="history-card reveal-up delay-1">
+                        <div class="history-card-icon">
+                            <i class="fa fa-book-open"></i>
+                        </div>
+                        <div class="history-card-body">
+                            <h3>A Biblioteca</h3>
+                            <p>O coração cultural da instituição é a sua Biblioteca, cuja organização e prestígio devem-se ao trabalho abnegado do seu Diretor Cultural, o Sr. Antônio Carlos Desidério de Oliveira. Sob sua gestão técnica, o acervo foi preservado como um tesouro literário da cidade, sob a liderança do Presidente Dr. Manoel Guino.</p>
+                        </div>
+                    </div>
+
+                    <div class="history-card reveal-right">
+                        <div class="history-card-icon">
+                            <i class="fa fa-music"></i>
+                        </div>
+                        <div class="history-card-body">
+                            <h3>Os Bailes</h3>
+                            <p>Um dos maiores marcos desta gestão foi a revitalização dos tradicionais Bailes da Humanitária. Após permanecerem inativos por décadas, foram reativados há três anos. O que começou como um resgate histórico tornou-se um fenômeno de público: hoje, a instituição realiza de dois a três bailes mensais, todos com absoluto sucesso de lotação.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- NÚMEROS -->
+        <section class="stats-section reveal-fade">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="145">0</span>
+                    <span class="stat-suffix">anos</span>
+                    <p>de história</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="3">0</span>
+                    <span class="stat-suffix">bailes</span>
+                    <p>mensais realizados</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="1879">0</span>
+                    <p>ano de fundação</p>
                 </div>
             </div>
         </section>
 
+        <!-- VISITE-NOS -->
         <section class="visit-us-section">
-    <div class="container-luxury-centered">
-        
-        <div class="info-card-luxury" style="text-align: center;">
-            <span class="tagline-gold">Localização & Expediente</span>
-            <h2 class="title-gold" style="justify-content: center;">Prepare sua Visita</h2>
-            <div class="divider-gold-short" style="margin: 20px auto;"></div>
-
-            <div class="info-grid-row">
-                
-                <div class="info-item-center">
-                    <i class="fa fa-map-marker-alt icon-gold-large"></i>
-                    <h3>Endereço</h3>
-                    <p>Praça Patriarca José Bonifácio, 59 - 1º Andar</p>
-                    <p>Centro Histórico, Santos - SP</p>
+            <div class="container-luxury-centered">
+                <div class="visit-header reveal-up">
+                    <p class="section-eyebrow">Venha nos Conhecer</p>
+                    <h2 class="section-title dark">Prepare sua <em>Visita</em></h2>
+                    <div class="divider-ornament dark">
+                        <span></span><i class="fa fa-map-marker-alt"></i><span></span>
+                    </div>
                 </div>
 
-                <div class="info-item-center">
-                    <i class="fa fa-clock icon-gold-large"></i>
-                    <h3>Horários</h3>
-                    <p>Segunda a Sexta: 08h00 – 18h00</p>
-                    <p class="closed">Sábados e Domingos: Fechado</p>
+                <div class="info-grid-row">
+                    <div class="info-item-center reveal-up delay-1">
+                        <div class="info-icon-wrap">
+                            <i class="fa fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Endereço</h3>
+                        <p>Praça Patriarca José Bonifácio, 59</p>
+                        <p>1º Andar · Centro Histórico, Santos – SP</p>
+                    </div>
+
+                    <div class="info-item-center reveal-up delay-2">
+                        <div class="info-icon-wrap">
+                            <i class="fa fa-clock"></i>
+                        </div>
+                        <h3>Horários</h3>
+                        <p>Segunda a Sexta: 08h00 – 18h00</p>
+                        <p class="closed">Sáb. e Dom.: Fechado</p>
+                    </div>
+
+                    <div class="info-item-center reveal-up delay-3">
+                        <div class="info-icon-wrap">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h3>WhatsApp</h3>
+                        <p>(13) 99759-8668</p>
+                        <p>Atendimento direto</p>
+                    </div>
                 </div>
 
-                <div class="info-item-center">
-                    <i class="fa fa-phone-alt icon-gold-large"></i>
-                    <h3>Contato</h3>
-                    <p>Via WhatApp</p>
-                    <p>(13) 99759-8668</p>
+                <div class="visit-cta reveal-up delay-4">
+                    <a href="https://www.google.com/maps/dir/Biblioteca+Sociedade+Humanit%C3%A1ria+-+Pra%C3%A7a+Patriarca+Jos%C3%A9+Bonif%C3%A1cio+-+Centro,+Santos+-+SP/Pra%C3%A7a+Patriarca+Jos%C3%A9+Bonif%C3%A1cio,+59+-+Centro,+Santos+-+SP,+11013-190" 
+                       target="_blank" class="btn-primary">
+                        <i class="fa fa-location-arrow"></i> Como Chegar
+                    </a>
+                    <a href="https://wa.me/5513997598668" target="_blank" class="btn-secondary">
+                        <i class="fab fa-whatsapp"></i> Falar pelo WhatsApp
+                    </a>
                 </div>
-
             </div>
+        </section>
 
-            <a href="https://www.google.com/maps/dir/Biblioteca+Sociedade+Humanit%C3%A1ria+-+Pra%C3%A7a+Patriarca+Jos%C3%A9+Bonif%C3%A1cio+-+Centro,+Santos+-+SP/Pra%C3%A7a+Patriarca+Jos%C3%A9+Bonif%C3%A1cio,+59+-+Centro,+Santos+-+SP,+11013-190/@-23.937654,-46.327463,17z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x94ce037f6e4cc1db:0xe46c18cc4bae7000!2m2!1d-46.3248562!2d-23.9376702!1m5!1m1!1s0x94ce037f6ef537d3:0xc9eb42305f1c27ed!2m2!1d-46.3249174!2d-23.9377197?entry=ttu&g_ep=EgoyMDI2MDExMy4wIKXMDSoASAFQAw%3D%3D" 
-               target="_blank" 
-               class="btn-outline-gold btn-large">
-               Como Chegar <i class="fa fa-location-arrow"></i>
-            </a>
-
-        </div>
-
-    </div>
-</section>
-
-            </div>
-
-        </div>
-    </div>
-</section>
     </main>
 
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-logo">BSH <span>1879</span></div>
+            <p>Sociedade Humanitária dos Empregados no Comércio de Santos</p>
+            <p class="footer-address">Praça Patriarca José Bonifácio, 59 · Centro · Santos – SP</p>
+            <div class="footer-divider"></div>
+            <p class="footer-copy">© 2025 · Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLOAT -->
     <a href="https://wa.me/5513997598668" class="whatsapp-float" target="_blank" title="Fale Conosco pelo WhatsApp">
-    <i class="fab fa-whatsapp"></i>
-    <span class="tooltip-whatsapp">Atendimento via WhatsApp</span>
-</a>
+        <i class="fab fa-whatsapp"></i>
+        <span class="tooltip-whatsapp">Atendimento via WhatsApp</span>
+    </a>
+
     <script src="script.js"></script>
+    <script>
+    // NAVBAR: encolhe ao rolar
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+        navbar.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // MENU MOBILE
+    const toggle = document.getElementById('menuToggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle?.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+        toggle.classList.toggle('active');
+    });
+
+    // SCROLL REVEAL
+    const revealEls = document.querySelectorAll('.reveal-up, .reveal-fade, .reveal-left, .reveal-right');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+            if (e.isIntersecting) {
+                e.target.classList.add('visible');
+                observer.unobserve(e.target);
+            }
+        });
+    }, { threshold: 0.15 });
+    revealEls.forEach(el => observer.observe(el));
+
+    // CONTADORES
+    function animateCount(el) {
+        const target = parseInt(el.dataset.target);
+        const duration = 1800;
+        const step = target / (duration / 16);
+        let current = 0;
+        const timer = setInterval(() => {
+            current = Math.min(current + step, target);
+            el.textContent = Math.floor(current).toLocaleString('pt-BR');
+            if (current >= target) clearInterval(timer);
+        }, 16);
+    }
+    const statObs = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+            if (e.isIntersecting) {
+                e.target.querySelectorAll('.stat-number').forEach(animateCount);
+                statObs.unobserve(e.target);
+            }
+        });
+    }, { threshold: 0.5 });
+    document.querySelector('.stats-section') && statObs.observe(document.querySelector('.stats-section'));
+    </script>
 </body>
 </html>
